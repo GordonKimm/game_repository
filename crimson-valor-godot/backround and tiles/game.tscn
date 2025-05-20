@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsxgeiluus1jm"]
+
+[ext_resource type="PackedScene" uid="uid://dddeqekgfvc3g" path="res://backround and tiles/playermove.tscn" id="1_pxnrn"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_pxnrn"]
+distance = 3.0
+
+[node name="Game" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_pxnrn")]
+position = Vector2(-2, 1)
+
+[node name="Camera" type="Camera2D" parent="."]
+position = Vector2(-1, -35)
+zoom = Vector2(2, 2)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("WorldBoundaryShape2D_pxnrn")
