@@ -6,7 +6,13 @@ const GRAVITY = 1000.0
 
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
+var is_dead: bool = false   # tracks if the player is dead
+
 func _physics_process(delta: float) -> void:
+	# 🚫 If dead, stop movement completely
+	if is_dead:
+		return
+
 	# Apply gravity only when in the air
 	if not is_on_floor():
 		velocity.y += GRAVITY * delta
@@ -40,3 +46,11 @@ func _physics_process(delta: float) -> void:
 
 	# Move the character
 	move_and_slide()
+
+
+# Call this when the player dies (e.g., from Killzone)
+func die() -> void:
+	if not is_dead:
+		is_dead = true
+		velocity = Vector2.ZERO
+		animated_sprite_2d.play("death")
