@@ -54,3 +54,8 @@ func die() -> void:
 		is_dead = true
 		velocity = Vector2.ZERO
 		animated_sprite_2d.play("death")
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if body.name == "player_3":
+		get_tree().reload_current_scene()

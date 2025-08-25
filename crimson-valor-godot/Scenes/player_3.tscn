@@ -207,7 +207,7 @@ height = 14.0
 
 [node name="player_3" type="CharacterBody2D"]
 collision_layer = 3
-collision_mask = 3
+collision_mask = 19
 script = ExtResource("1_wvkwn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -218,5 +218,5 @@ frame = 3
 frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(7, -8)
+position = Vector2(7, -7)
 shape = SubResource("CapsuleShape2D_wuk5g")
