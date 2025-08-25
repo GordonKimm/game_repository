@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://br8wqqfi7i2o5"]
+
+[ext_resource type="AudioStream" uid="uid://dntbwwisall3u" path="res://Assets/dorian concept - hide but it's midwest emo (full version).mp3" id="1_fbmny"]
+
+[node name="Music" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_fbmny")
+autoplay = true
+bus = &"Music"

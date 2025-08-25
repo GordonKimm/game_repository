@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dntbwwisall3u"
+path="res://.godot/imported/dorian concept - hide but it's midwest emo (full version).mp3-42eaac778c00bf0a84523eb59d959df2.mp3str"
+
+[deps]
+
+source_file="res://Assets/dorian concept - hide but it's midwest emo (full version).mp3"
+dest_files=["res://.godot/imported/dorian concept - hide but it's midwest emo (full version).mp3-42eaac778c00bf0a84523eb59d959df2.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4
